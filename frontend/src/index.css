@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light dark;
+}
+
+body {
+  @apply text-gray-900 dark:text-gray-100;
+  background-image:
+    radial-gradient(ellipse at top left, rgba(99,102,241,0.18), transparent 50%),
+    radial-gradient(ellipse at bottom right, rgba(16,185,129,0.18), transparent 50%);
+  background-color: #0f172a; /* slate-900 */
+}
+
+/* Decorative gradient orbs */
+.decor-orb {
+  filter: blur(40px);
+  opacity: 0.35;
+}
